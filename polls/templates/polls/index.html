@@ -3,7 +3,7 @@
 {%for q in data %}
 
 <li>
-<a href="{{q.id}}/">  {{q.question_text}}
+<a href="{% url 'details' q.id %}">  {{q.question_text}}
 </a>
 </li>
 
